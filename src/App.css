@@ -1,0 +1,241 @@
+
+/* Open Sans and Comfortaa font */
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;700&family=Open+Sans&display=swap');
+
+/* === text styling ======================================================== */
+h1, h2, h3, h4, h5, h6 {  
+  font-family: 'Comfortaa', cursive;
+  font-weight: 700;
+  color: #5B6270;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {font-size: 64px;}
+h2 {font-size: 48px;}
+h3 {font-size: 32px;}
+h4 {font-size: 24px;}
+h5 {font-size: 20px;}
+
+p {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #5B6270;
+  margin: 0;
+  padding: 0;
+}
+a {
+  color: #71A2CF;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  text-decoration: underline;
+  margin: 0;
+  padding: 0;
+  transition: 0.3s;
+}
+a:hover {color: #9DD4E7;}
+
+/* specifically for the navigation bar links */
+.header {
+  color: #71A2CF;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+/* font media queries */
+@media screen and (max-width: 800px) {
+
+  h1 {font-size: 48px;}
+  h2 {font-size: 32px;}
+  h3 {font-size: 24px;}
+  h4 {font-size: 20px;}
+  h5 {font-size: 16px;}
+}
+
+/* === text styling end ======================================= */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #FEFCF9;
+  width: 100vw;
+}
+.navLogo {
+  margin-top: -2px;
+  margin-left: 10px;
+  width: 45px;
+  height: 55px;
+}
+/* if u want to center the page, use this on a <div> after <Navbar /> */
+.centeredCont {
+  display: flex;
+  margin-top: 25px;
+  justify-content: center;
+}
+
+.dialogCont {
+  width: 750px;
+  padding: 20px 50px 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.flexRow {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.justifyRight {
+  text-align: right;
+}
+
+.button {
+  width: 190px;
+  height: 40px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0px 1px 4px 0px #00000026;
+
+
+  background-color: #C3E5F0;
+  color: #5B6270;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.button:hover {
+  background-color: #9DD4E7;
+}
+
+.Main {
+  width: 100vw;
+  /* margin-left: 24px;
+  margin-right: 24px; */
+  text-align: center;
+  /* opacity: 1; */
+  animation: gainOpacity 3.5s;
+  
+}
+.App-logo {
+  height: 30vmin;
+  pointer-events: none;
+}
+.bgDeco {
+  z-index: -5;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+
+}
+
+/* 
+.main-page {
+  width: 100vw;
+} */
+/* .App-header {
+  display: flex;
+  justify-content: center;
+  margin-left: 24px;
+  margin-right: 24px;
+} */
+
+
+/*  React Component Animation */
+
+.PopUp-enter {
+  visibility: collapse !important;
+  opacity: 0;
+}
+
+.PopUp-enter-active {
+  opacity: 0.5;
+  visibility: visible !important;
+}
+.PopUp-enter-done {
+  visibility: visible !important;
+  opacity: 1;
+}
+
+.PopUp-exit {
+  visibility: visible !important;
+  opacity: 1;
+}
+
+.PopUp-exit-active {
+  visibility: visible !important;
+  opacity: 0.5;
+}
+.PopUp-exit-done {
+  opacity: 0;
+  visibility: collapse !important;
+}
+
+/* .mood-component {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  margin-top: 5em;
+} */
+.welcome-animation  {
+  opacity: 1
+}
+.greeting-animation {
+  opacity: 1
+}
+
+
+@keyframes gainOpacity {
+  0% {opacity: 0;}
+  
+  100% {
+    opacity: 1;
+  }
+}
+
+.kalm-logo-animation {
+  width: 25%;
+}
+@keyframes animateLogo {
+  0% {transform: scale(1);}
+  70% {
+    transform: scale(0.35);
+    top: -6.5em;
+    left: -13.2em;
+  }
+  100% { 
+    opacity: 0.5;
+    transform: scale(0.35);
+    top: -6.5em;
+    left: -13.2em;
+  }
+}
+.welcome-logo-animation {
+  animation: gainOpacity 2s;
+  animation: animateLogo 2s 2s;
+}
+
+.animate {
+  animation: animate 2s;
+}
+@keyframes animate {
+  0% {opacity: 1;}
+  100% {
+    opacity: 0;
+    transform: scale(0);
+  }
+}
+
+@keyframes animate {
+  0% {opacity: 1;}
+  100% {
+    opacity: 0;
+    transform: scale(0);
+  }
+}

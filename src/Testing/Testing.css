@@ -1,0 +1,19 @@
+
+#testing {
+    display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: black;
+}
+
+
+#vibrate-app {
+  margin-top: 150px;
+}
+
+.vibrate-button {
+  padding: 15px;
+  background-color: dimgrey;
+  color: black;
+}
